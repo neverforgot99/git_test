@@ -1,0 +1,14 @@
+idea中配置git
+
+新版idea需要添加信任文件夹目录
+file -----setting----build，execution,deployment---trusted locations
+添加git目录到此中
+
+
+然后setting-git配置目录D:\programming\devlopement_software\Git\cmd\git.exe
+
+
+配置idea ssh连接配置文件C:\Users\Administrator.DESKTOP-JFNEAQP\.ssh\id_rsa
+
+配置idea 登录github
+git      abc521428

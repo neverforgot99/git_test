@@ -61,3 +61,9 @@ git fetch [remote name] [branch name]
 
 拉取 ：拉取到本地，会合并
 git pull [remote name] [branch name]
+
+
+
+如果git pull出现两次修改冲突，先本地vi修改文件再git add .  再git commit -m "xx",
+最后在git pull origin master 提交远程仓库
+
