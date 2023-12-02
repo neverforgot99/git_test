@@ -1,0 +1,35 @@
+
+生成ssh公钥
+git bash命令行
+ssh-keygen -t rsa
+
+
+生成公钥位置
+C:\Users\Administrator.DESKTOP-JFNEAQP\.ssh\id_rsa.pua
+cat ~/.ssh/id_rsa.pua
+
+全选复制就是公钥
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDu4clUOh5e6rllZKNKc24LpDquzu/JEilUWcGPRmaCC1kG7hPM0ZrSfSKJUraMnB26mhQ5i7j98/s5qNWa4XlJPEGaYL3Txph6/gQZIoREcTBr5mA000nQZCV8XoTYQtMHt6PG0icndJ4qjDk6WQD8G+Yc2e0jvg9+GNmvEekc7SmcbZfsbGerKb4frthKSikkOEXWqMnF8dwcj87SFWlBhu23ZHBtX9iG/23ZXECai9as+na/Rlvkvx+VcszLmQztfy72wKqdR3ygTCoCo8VPevcbq/o6U3jYifoiZEe1zbbikeQ0sVaU5mjQTOTxqSVGtz/0H4evKK4VAe5fqVW5DpJJ3IFWlyPzvdEgH+CbD1Y7vu7xNKuhDZ6mQZ0MPLqY7Ba7bZ8DN7XNgFTFbUPzT7XNOmUxWdaHl1LJTdW53OoLEPEnz7dbtH6cgNliPlTKBArJiSnI0bzdS3FKhMbifvuvxt2cjxN6zmfDDc7MSxbwUxa5oqRHS1hAXOOR5XU= Administrator@GIGABYTE-002
+
+
+备份公钥
+mv ~/.ssh ~/.ssh.bark2
+
+
+登录github  setting    ssh公钥 添加公钥
+
+验证ssh是否配置成功
+ssh -T git@github.com                 ssh -T git@gitee.com
+
+
+
+本地推送远程仓库（checkout 当前版本）
+git remote add origin  git@github.com:neverforgot99/git_test
+
+
+查看本地仓库是否添加成功
+git remote 
+origin
+
+本地推送远程仓库
+git push origin master
