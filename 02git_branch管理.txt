@@ -1,0 +1,33 @@
+git initt 添加git管理文件
+
+
+touch test.txt
+
+git status  test.txt       工作区
+
+git add test.txt
+git add .                   暂存区
+
+git status  test.txt
+
+git commit -m "add_file01"        仓库区
+
+git log 
+
+git log  [option]
+          --all 显示所有分支
+		  --pretty=online 将提交信息显示为一行
+		  --abbrev-commit 使得输出的commit更简短
+		  --graph   以图形显示
+		  
+版本退回
+      git reset --hard commitiID
+	  
+git-log  查看之前版本的commitid
+
+git reflog 版本变更记录
+
+
+touch .gitignore         git不管理文件
+vi .gitignore
+*.a

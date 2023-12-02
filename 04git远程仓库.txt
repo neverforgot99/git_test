@@ -24,7 +24,8 @@ ssh -T git@github.com                 ssh -T git@gitee.com
 
 
 本地推送远程仓库（checkout 当前版本）
-git remote add origin  git@github.com:neverforgot99/git_test
+git remote add  <远程仓库名>   <仓库路径>
+git remote add origin  https://github.com/neverforgot99/git_test.git             git remote add origin  git@gitee.com:neverforgot99/git_test.git
 
 
 查看本地仓库是否添加成功
@@ -32,4 +33,31 @@ git remote
 origin
 
 本地推送远程仓库
+git push [-f] [--set-upstream] <远程仓库名>  <本地分支名><:远端分支名>  
+如果本地分支名=远端分支名，可以省略：远端分支名
+[-f] 强制覆盖，一般只许添加不许覆盖	
+[--set-upstream] 推送到远端额同时并建立起和远端分支的关联关系												
 git push origin master
+
+
+删除远程仓库
+ git remote rm origin
+ 
+ 
+ 本地master与远端master进行绑定，下次直接git push 就直接推给远端master版本
+ git push --set-upstream origin master:master
+ 
+ 查看远端关系
+ git branch -vv
+ 
+ 
+拉取远程仓库
+git clone <仓库路径> [本地目录]
+
+
+抓取 ：抓取到本地，但不会合并
+git fetch [remote name] [branch name]
+
+
+拉取 ：拉取到本地，会合并
+git pull [remote name] [branch name]

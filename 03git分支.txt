@@ -1,0 +1,50 @@
+git 分支
+分布开发需求
+
+git branch  查看分支
+git branch dev01   创建分支
+
+git-log  查看分支内容
+
+
+工作区只能有一个分支
+
+再次提交会提交到master分支上，dev01保留,head指向为当前分支
+
+切换分支 
+git checkout dev01
+
+git checkout -b dev02  创建并切换分支
+
+！合并分支
+其他分支合并到master
+切换到master
+git merge dev01
+
+
+删除分支
+git branch -d  dev01  删除一个分支
+git branch -D dev01   强制删除一个分支
+
+
+
+冲突
+不同版本的相同文件，有不同更改，选择更改
+
+<<<<<<< HEAD
+ccc
+=======
+bbbb
+>>>>>>> dev01
+
+手动编辑，并且git add.   git commit -m "xx"
+
+
+分支规范
+master生产分支
+
+develop开发分支
+
+feature 分支
+
+hotfix

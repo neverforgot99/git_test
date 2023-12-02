@@ -1,0 +1,27 @@
+下载git
+
+
+运行open git bash here
+
+设置user.name
+
+git config --global user.name "zuofei123"
+git config --global user.email "326314028@qq.com"
+
+
+
+
+快捷命令
+/用户   目录下创建.bashrc文件
+
+#用于输出git提交日志
+alias git-log='git log --pretty=oneline --all --graph --abbrev-comit'
+#用于输出当前目录所有文件及基本信息
+alias ll='ls -al'
+
+git解决乱码
+1 GITBASH 执行命令
+git config --global core.quotepath false
+2 ${git_home}/etc/bash.bashrc 文件最后加入下面两行
+export LANG="zh_CN.UTF-8"
+export LC_ALL="zh_CN.UTF-8"
